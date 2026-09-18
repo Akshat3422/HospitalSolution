@@ -1,1 +1,4 @@
 kagglehub[pandas-datasets]
+sqlalchemy 
+python-dotenv
+psycopg2
