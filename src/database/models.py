@@ -5,7 +5,7 @@ from sqlalchemy import (
     String,
     Text
 )
-
+from pgvector.sqlalchemy import Vector
 from sqlalchemy.orm import declarative_base
 
 Base = declarative_base()
@@ -36,6 +36,9 @@ class PatientEncounter(Base):
     dose_unit_rx = Column(String(50))
     form_unit_disp = Column(String(50))
     route = Column(String(50))
+    clinical_embeddings = Column(Vector(768))
+    clinical_text = Column(Text)
+    # description = Column(Text)
 
     eventtype = Column(String(50))
     careunit = Column(String(100))
