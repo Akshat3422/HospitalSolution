@@ -5,3 +5,11 @@ psycopg2
 pgvector
 sentence_transformers 
 fastapi[all]
+presidio_anonymizer
+presidio_anonymizer
+langchain 
+langchain_core
+langsmith
+langchain_community
+langchain_groq
+nemoguardrails
