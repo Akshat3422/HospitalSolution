@@ -13,3 +13,4 @@ langsmith
 langchain_community
 langchain_groq
 nemoguardrails
+streamlit
