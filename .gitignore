@@ -3,4 +3,3 @@ venv
 __pycache__
 ids.pkl
 clinical_texts.pkl
-config.yml
