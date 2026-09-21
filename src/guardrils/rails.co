@@ -1,19 +1,49 @@
+# ---------------------------------------------------------
+# USER INTENTS
+# ---------------------------------------------------------
+
 define user ask for medical advice
   "Can you prescribe me a new medication?"
+  "Can you prescribe a medication?"
   "What is the best treatment for this?"
+  "What treatment do you recommend?"
   "Should I increase the patient's dosage?"
+  "Should I decrease the patient's dosage?"
+  "Should I prescribe a higher dose?"
+  "Should I prescribe a higher dose of Furosemide?"
+  "Based on the fluid retention, should I prescribe a higher dose of Furosemide?"
+  "Should I change the patient's medication?"
+  "What dose should I give the patient?"
+  "Is it safe to increase the dosage?"
   "Diagnose my symptoms based on this chart."
+  "What is the diagnosis for this patient?"
+  "What condition does the patient have based on these symptoms?"
   "Recommend a drug for fluid retention."
+  "Which medication should I start?"
+  "Should I stop this medication?"
+  "What should I prescribe?"
 
 define user ask about patient history
   "What was the patient's last recorded dosage?"
+  "What was the patient's last recorded dosage of Furosemide?"
   "When was the patient admitted?"
   "Show me the historical lab results."
   "What medication is the patient currently taking?"
   "What was the dosage of Furosemide?"
+  "What were the latest vitals?"
+  "List the patient's allergies."
+  "When was the last visit?"
+
+# ---------------------------------------------------------
+# BOT MESSAGES
+# ---------------------------------------------------------
 
 define bot refuse medical advice
-  "I am an enterprise EHR retrieval system. For legal and compliance reasons, I cannot provide new medical diagnoses or recommend medication changes. Please consult the attending physician."
+  "I am an EHR assistant, so I cannot prescribe or give medical advice. Please consult the attending physician."
+
+# ---------------------------------------------------------
+# FLOWS
+# ---------------------------------------------------------
 
 define flow prevent medical advice
   user ask for medical advice
